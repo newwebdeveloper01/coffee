@@ -1,0 +1,49 @@
+.header > h1{
+    font-family: 'Fraunces';
+font-style: normal;
+font-weight: 900;
+font-size: 56px;
+line-height: 48px;
+/* identical to box height, or 86% */
+margin-top: 20px;
+margin-bottom: 100px;
+
+color: #333D4B;
+}
+.header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 1460px;
+    z-index: 99999999;
+    margin-left: -200px;
+    padding-left: 200px;
+}
+.header > ul{
+    margin-left: auto;
+    display: flex;
+}
+.header > ul > li{
+    margin: 0 30px;
+
+
+}
+.header > ul > li > a{
+        font-family: 'Barlow';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height, or 125% */
+text-decoration: none;
+letter-spacing: 0.923077px;
+text-transform: uppercase;
+color: #83888F;
+
+}
+.header > ul > li > a:active{
+    color: #333D4B;
+    cursor: pointer;
+
+}

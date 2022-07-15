@@ -1,0 +1,517 @@
+/* barlow-regular - latin */
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/barlow-v12-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/barlow-v12-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-v12-latin-regular.woff2") format("woff2"), url("../fonts/barlow-v12-latin-regular.woff") format("woff"), url("../fonts/barlow-v12-latin-regular.ttf") format("truetype"), url("../fonts/barlow-v12-latin-regular.svg#Barlow") format("svg"); /* Legacy iOS */
+}
+/* barlow-500 - latin */
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/barlow-v12-latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/barlow-v12-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-v12-latin-500.woff2") format("woff2"), url("../fonts/barlow-v12-latin-500.woff") format("woff"), url("../fonts/barlow-v12-latin-500.ttf") format("truetype"), url("../fonts/barlow-v12-latin-500.svg#Barlow") format("svg"); /* Legacy iOS */
+}
+/* barlow-700 - latin */
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/barlow-v12-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/barlow-v12-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-v12-latin-700.woff2") format("woff2"), url("../fonts/barlow-v12-latin-700.woff") format("woff"), url("../fonts/barlow-v12-latin-700.ttf") format("truetype"), url("../fonts/barlow-v12-latin-700.svg#Barlow") format("svg"); /* Legacy iOS */
+}
+/* fraunces-900 - latin */
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/fraunces-v22-latin-900.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/fraunces-v22-latin-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fraunces-v22-latin-900.woff2") format("woff2"), url("../fonts/fraunces-v22-latin-900.woff") format("woff"), url("../fonts/fraunces-v22-latin-900.ttf") format("truetype"), url("../fonts/fraunces-v22-latin-900.svg#Fraunces") format("svg"); /* Legacy iOS */
+}
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Arial", "sans-serif"; /*bu yerda font turi beriladi*/
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.contianer {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: white;
+  width: 100%;
+}
+
+.header > h1 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 48px;
+  /* identical to box height, or 86% */
+  margin-top: 20px;
+  margin-bottom: 100px;
+  color: #333D4B;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 1460px;
+  z-index: 99999999;
+  margin-left: -200px;
+  padding-left: 200px;
+  margin-bottom: 1000px;
+}
+
+.header > ul {
+  margin-left: auto;
+  display: flex;
+}
+
+.header > ul > li {
+  margin: 0 30px;
+}
+
+.header > ul > li > a {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height, or 125% */
+  text-decoration: none;
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888F;
+}
+
+.header > ul > li > a:active {
+  color: #333D4B;
+  cursor: pointer;
+}
+
+.plan {
+  width: 100%;
+  margin-top: 100px;
+  padding-top: 40px;
+  height: 450px;
+  border-radius: 10px;
+  background: url(../img/Bitmap2.png) no-repeat;
+}
+
+.plan > h2 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  margin-left: 86px;
+  margin-top: 100px;
+  margin-bottom: 32px;
+  color: #FEFCF7;
+}
+
+.plan > p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  width: 445px;
+  margin-left: 86px;
+  color: #FEFCF7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+/*     works    */
+.works2 {
+  position: relative;
+  top: 100px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  background: #2C343E;
+  border-radius: 10px;
+}
+
+.works2__line {
+  margin-top: 95px;
+  height: 2px;
+  background: #FDD6BA;
+  width: 63%;
+}
+
+.works2__line > span {
+  position: absolute;
+  padding: 15px 20px;
+  border: 2px solid #0E8784;
+  border-radius: 50%;
+  top: 100px;
+}
+
+.aylana + .aylana {
+  margin-left: 380px;
+}
+
+.aylana + .aylana + .aylana {
+  margin-left: 760px;
+}
+
+.works2__info {
+  display: flex;
+  margin-top: 60px;
+}
+
+.works2__info__item > strong {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  /* identical to box height, or 100% */
+  margin-bottom: 38px;
+  color: #FDD6BA;
+}
+
+.works2__info__item > h3 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  /* or 112% */
+  width: 255px;
+  margin-top: 20px;
+  color: #FEFCF7;
+}
+
+.works2__info__item {
+  width: 30%;
+}
+
+.works2__info__item > p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  margin-top: 40px;
+  width: 285px;
+  color: #FEFCF7;
+}
+
+/* ----------------list  __________________*/
+.list {
+  position: relative;
+  top: 200px;
+  left: 50px;
+}
+
+.list > ul > li {
+  display: flex;
+  width: 255px;
+  padding: 24px 0;
+  border-bottom: 1px solid #868b92;
+}
+
+.list > ul > li > span:hover {
+  color: #868b92;
+}
+
+.list > ul > li > p:hover {
+  color: #868b92;
+}
+
+.list > ul > li > span:hover ~ p {
+  color: #868b92;
+}
+
+.list > ul > li > span {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  color: #b0b2b4;
+}
+
+.list > ul > li > p {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  margin-left: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #b0b2b4;
+}
+
+/* ________________________________git drink_____________________________*/
+.drink {
+  position: relative;
+  top: -210px;
+  left: 250px;
+  width: 920px;
+}
+
+.drink__form__ul__li > label {
+  position: relative;
+}
+
+.drink__form__ul__li__list {
+  display: flex;
+}
+
+.drink__form__ul__li__list__item {
+  height: 250px;
+  width: 228px;
+  border-radius: 8px;
+}
+
+.drink__form__ul__li__list__item + .drink__form__ul__li__list__item {
+  padding-left: 20px;
+}
+
+.drink__form__ul__li__list__item + .drink__form__ul__li__list__item + .drink__form__ul__li__list__item {
+  margin-left: 20px;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 250px;
+  width: 228px;
+  z-index: -1;
+  background: #F4F1EB;
+  border-radius: 8px;
+}
+
+input[type=checkbox]:hover {
+  background-color: #FDD6BA;
+}
+
+input[type=checkbox]:checked {
+  background-color: #0E8784;
+  color: #FFFFFF;
+}
+
+input[type=checkbox]:checked ~ h4 {
+  color: #FFFFFF;
+}
+
+input[type=checkbox]:checked ~ h4 ~ p {
+  color: #FFFFFF;
+}
+
+.drink__form__ul__li__list__item > h4 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  margin-top: 30px;
+  margin-left: 20px;
+  color: #333D4B;
+}
+
+.drink__form__ul__li__list__item > p {
+  margin-top: 30px;
+  margin-left: 20px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  width: 172px;
+  color: #333D4B;
+}
+
+.drink__form__ul__li + .drink__form__ul__li {
+  margin-top: 80px;
+}
+
+.drink__form__ul__li > h3 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  /* identical to box height, or 120% */
+  margin-bottom: 50px;
+  color: #83888F;
+}
+
+.drink__form__ul__li > h3::after {
+  content: url(../img/Path\ 2.png);
+  margin-left: 70px;
+  margin-bottom: 10px;
+}
+
+.drink__form__bottom {
+  height: 288px;
+  width: 730px;
+  margin-left: 40px;
+  margin-top: 80px;
+  padding: 30px 60px;
+  background: #2C343E;
+  border-radius: 10px;
+}
+
+.drink__form__bottom > h3 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.drink__form__bottom > p {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 40px;
+  /* or 167% */
+  width: 602px;
+  color: #FFFFFF;
+}
+
+.drink__form__bottom > p > span {
+  color: #0E8784;
+}
+
+.drink__form__button {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height, or 139% */
+  padding: 15px 35px;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 550px;
+  color: #FEFCF7;
+  background: #0E8784;
+  border-radius: 6px;
+  border: 0ch;
+}
+
+.drink__form__button:hover {
+  background: #66D2CF;
+  cursor: pointer;
+}
+
+.footers2 {
+  padding: 40px 20px;
+  position: relative;
+  /* top: -1800px; */
+  background: #2C343E;
+}
+
+.footers2__footer {
+  display: flex;
+  align-items: center;
+}
+
+.footers2__footer > ul {
+  display: flex;
+  margin-left: 100px;
+}
+
+.footers2__footer > ul > li {
+  margin-left: 33px;
+}
+
+.footers2__footer > ul > li > a {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height, or 125% */
+  text-decoration: none;
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888F;
+}
+
+.footers2__footer > ul > li > a:active {
+  color: white;
+}
+
+.footers2__footer__icons {
+  margin-left: auto;
+}
+
+.footers2__footer__icons > img {
+  margin-left: 25px;
+}
+
+.footers2__footer__icons > img:active {
+  background-color: #FDD6BA;
+}/*# sourceMappingURL=main_3.css.map */

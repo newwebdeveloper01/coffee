@@ -10,19 +10,25 @@ margin-bottom: 100px;
 
 color: #333D4B;
 }
-.header{
+header{
+    width: 100%;
     position: fixed;
+    top: 0;
+    z-index: 999999999999999999999999999999999;
+}
+.header{
+    // position: fixed;
     display: flex;
+    width: 100%;
     align-items: center;
     background-color: white;
-    width: 1460px;
-    z-index: 99999999;
-    margin-left: -200px;
-    padding-left: 200px;
+    z-index: 333333333333333333333344499;
+
 }
 .header > ul{
-    margin-left: auto;
     display: flex;
+    margin-left: auto;
+    
 }
 .header > ul > li{
     margin: 0 30px;
@@ -46,4 +52,8 @@ color: #83888F;
     color: #333D4B;
     cursor: pointer;
 
+}
+@media only  screen and (max-width:1107px) {
+    
+    
 }

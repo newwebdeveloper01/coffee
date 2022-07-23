@@ -1,8 +1,9 @@
 /*____________________________FOOTER_______________________*/
 .footers1{
+    margin-top: 100px;
     padding: 40px 20px;
     position: relative;
-    top: 1700px;
+    // top: 1700px;
     background: #2C343E;
     
 }
@@ -39,4 +40,38 @@ color: #83888F;
 }
 .footers1__footer__icons > a:active{
     background-color: #FDD6BA;
+}
+@media only  screen and (max-width:1200px) {
+    // .footers1{
+    //     // top: 1200px;
+    // }
+    
+}
+@media only  screen and (max-width:768px) {
+    .footers1{
+        // top: 1700px;
+        &__footer{
+            display: block;
+            
+            & a{
+                margin-left: 30%;
+               
+               
+            }
+            & ul{
+                & li{
+                    & a{
+                         margin-left: 0px;
+                    }
+                   
+                }
+            }
+            &__icons{
+                margin-left: 30%;
+            }
+        }
+    }
+    .footers1__footer__icons > a{
+        margin-left: 25px;
+    }
 }

@@ -16,6 +16,9 @@ header{
     top: 0;
     z-index: 999999999999999999999999999999999;
 }
+.header > label{
+    display: none;
+}
 .header{
     // position: fixed;
     display: flex;
@@ -53,7 +56,86 @@ color: #83888F;
     cursor: pointer;
 
 }
-@media only  screen and (max-width:1107px) {
+// @media only  screen and (max-width:1107px) {
     
+    
+// }
+@media only screen and (max-width:768px){
+    .header > ul{
+        margin-left: 0;
+    
+    
+    }
+    
+
+    .header > ul > li{
+        margin: 0 10px;
+    
+    
+    }
+    
+}
+@media only screen and (max-width:595px){
+    .header{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        & ul{
+            display: none;
+        }
+        & label{
+            margin-left: auto;
+            display: flex;
+            flex-direction: column;
+            width: 30px;
+            height: 40px;
+            background-color: aqua;
+            // border: 1px solid black;
+            & input{
+                appearance: none;
+               
+            }
+             & > .line{
+                    height: 2px;
+                    padding: 1px 0;
+                    background-color: black;
+                    
+                }
+            & > .line2{
+                    height: 2px;
+
+                    margin-top: 7px;
+                }
+                & > .line3{
+                    padding: 1px 0;
+                    height: 2px;
+                    margin-top: 10px;
+                }
+            
+           & > input:checked ~ .line{
+            
+                    display: none;
+               }
+            & > input:checked ~ .list__mobile{
+                position: absolute;
+                left: 0px;
+                display: block;
+                margin-top: 80px;
+                height: 400px;
+                width: 100%;
+                background-color: #333D4B;
+                opacity: 0.8;
+                text-align: center;
+                & li{
+                    padding: 20px 0;
+                    & a{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 32px;
+                    }
+                }
+           }
+        }
+
+    }
     
 }

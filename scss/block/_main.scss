@@ -471,6 +471,35 @@ line-height: 72px;
 
     
 }
+@media only screen and(max-width:900px) {
+    .works__info{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 50px;
+        &__item{
+
+            text-align: center;
+            // max-width: 300px;
+            width: 100%;
+            & > h3{
+                width: 100%;
+            }
+            & > p{
+                margin: 40px auto;
+                width: 300px;
+            }
+        }
+    }
+    .works > a{
+        display: block;
+        width: 216px;
+        height: 54px;
+        margin: 40px auto;
+        // margin-left: auto;
+    }
+    
+}
+
 @media only screen and (max-width:723px) {
     .collection{
         &__top{

@@ -521,12 +521,26 @@ line-height: 72px;
         }
     }
     .coffee>h2 {
+
         font-size: 48px;
         line-height: 48px;
+        margin: auto;
+    text-align: center;
+    margin-top: 100px;
     }
     .coffee > p{
+
         font-size: 15px;
     line-height: 25px;
+    margin: auto;
+    margin-top: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+    }
+    .coffee > a{
+        display: inline;
+        // margin: auto;
+        // margin-left: auto;
     }
 }
 @media only screen and (max-width:620px) {
